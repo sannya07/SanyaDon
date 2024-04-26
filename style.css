@@ -95,12 +95,3 @@ p {
 }
 
 
-.ml-20{
-    margin-left:20rem !important;
-}
-
-
-@media (min-width: 768px) {
-    .ml-20 {
-      padding-top: 5rem !important;
-    }}
