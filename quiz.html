@@ -75,11 +75,13 @@
         .btn-option {
             width: 100px;
         }
-
+        .btn-option:hover{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(212, 39, 39, 0.12) 0px -12px 30px, rgba(240, 88, 88, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #222;
-            color: #eee;
+            color: #000000;
         }
 
         .btn-primary,
@@ -93,6 +95,8 @@
         .btn-primary:hover,
         .btn-success:hover {
             transform: scale(1.05);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            
         }
 
         @keyframes fadeInDown {
@@ -119,10 +123,11 @@
     </style>
 </head>
 <body>
-    <div class="d-flex justify-content-center align-items-center vh-100">
+    <!-- <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2 quiz-container">
+            <div class="row col-md-8 offset-md-2">
+                <div class="quiz-container">
+
                     <h2>Quiz Game</h2>
                     <div id="question"></div>
                     <div id="options" class="options"></div>
@@ -130,7 +135,19 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <div class="card text-center w-full p-4 mx-5 my-5">
+        <div class="card-header img-thumbnail">
+          <img src="https://cdn.discordapp.com/attachments/1164739421036347464/1233484708323786902/question.png?ex=662d43a7&is=662bf227&hm=9f2d3de8260324caafe1ac00a0b11ba2311bf5df32671603bc4b0ce496b52b59&" alt="">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">QUIZ GAME</h5>
+          <div id="question"></div>
+                    <div id="options" class="options"></div>
+                    <button id="nextBtn" class="btn btn-primary mt-3 ">Next Question</button>
+        </div>
+      </div>
     
     <script>
        
